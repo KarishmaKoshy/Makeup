@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Makeup/static/css/main.d5bed04d.css",
+    "main.js": "/Makeup/static/js/main.d02320d1.js",
+    "static/media/img.jpg": "/Makeup/static/media/img.e3803c5618cde51e90ee.jpg",
+    "index.html": "/Makeup/index.html",
+    "main.d5bed04d.css.map": "/Makeup/static/css/main.d5bed04d.css.map",
+    "main.d02320d1.js.map": "/Makeup/static/js/main.d02320d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5bed04d.css",
+    "static/js/main.d02320d1.js"
+  ]
+}
