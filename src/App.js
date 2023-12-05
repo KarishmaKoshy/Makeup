@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Blush, Bronzer, Eyeliner, Eyeshadaw, LipLiner, Lipstick, Mascara, Nailpolish } from './urls'
+import './App.css'
+import { Routes,Route} from "react-router-dom";
+import Products from "./Components/RowCake/Products";
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      
+      {/* <NavBar/> */}
+
+  
+      <Routes>
+      <Route element={  <Products title='Blush' url={Blush }/>} exact path="/"></Route>
+
+        <Route element={  <Products title='Lipstick' url={Lipstick}/>} path="/Lipsticks"></Route>
+        <Route element={  <Products title='Bronzer' url={Bronzer}/>} path="/Bronzer"></Route>
+        <Route element={  <Products title='Eyeshadow' url={Eyeshadaw}/>} path="/Eyeshadow"></Route>
+        <Route element={  <Products title='Eyeliner' url={Eyeliner}/>} path="/Eyeliner"></Route>
+        <Route element={  <Products title='Lipstick' url={Lipstick}/>} path="/Lipstick"></Route>
+        <Route element={  <Products title='Lip Liner' url={LipLiner}/>} path="/LipLiner"></Route>
+        <Route element={  <Products title='Mascara' url={Mascara}/>} path="/Mascara"></Route>
+        <Route element={  <Products title='Nail Polish' url={Nailpolish}/>} path="/NailPolish"></Route>
+     
+   
+      </Routes>
+      
+   
+      
+
     </div>
   );
 }
